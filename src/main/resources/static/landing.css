@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-padding-top: 80px; /* Prevents navbar overlap */
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f2734;
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav-bar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #1bc6ff);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: #000000;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 60px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+#nav-items {
+    display: flex;
+}
+
+#nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2980b9;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-right: 25px;
+}
+
+#nav-items a:hover {
+    color: #ffcc00;
+    background-color: #0f2734;
+}
+
+.main {
+    height: 100vh; /* Adjusted height to fit viewport */
+    margin-top: 10vh;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+}
+
+.home-container {
+    height: 90vh;
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center; /* Centers text horizontally */
+    text-align: center;
+    justify-content: center;
+}
+
+.home-container h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.home-container p {
+    color: white;
+    font-size: 22px;
+}
+
+.home-container a {
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #1bc6ff;
+    text-decoration: none;
+    font-weight:500;
+}
+
+
+.main2 {
+    height: 100vh; /* Adjusted height to fit viewport */
+    margin-top: 10vh;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+}
+
+.about-us {
+    height: 100vh;
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center; /* Centers text horizontally */
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.about-us h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.about-us p {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about-us a {
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #1bc6ff;
+    text-decoration: none;
+    font-weight:500;
+}

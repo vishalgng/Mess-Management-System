@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Booking System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.MJ6Bm3Vbv6GjHPY5k8XeDQHaF7&pid=Api&P=0&h=180" alt="Serve Smart Logo">
+            <h2>Serve Smart</h2>
+        </div>
+        <div id="nav-items">
+            <a href="admin.html">Dashboard</a>
+            <a href="adduser.html">Add New User</a>
+        </div>
+    </div>
+
+    <div id="dashboard">
+
+        <div class="profile-container">
+            <h2>Profile</h2>
+            <h2>Admin</h2>
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Picture">
+            <h2>Ketan Suthar</h2>
+            <p>2203051050292@paruluniversity.ac.in</p>
+        </div>
+
+        <div class="meal-container">
+            <h1>Analytics Board</h1>
+            <div class="chart-container">
+                <canvas id="mealLineChart"></canvas>
+            </div>
+        </div>
+        
+        <script src="admin.js"></script>
+</body>
+</html>

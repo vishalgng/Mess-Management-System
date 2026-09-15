@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Booking System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.MJ6Bm3Vbv6GjHPY5k8XeDQHaF7&pid=Api&P=0&h=180" alt="Serve Smart Logo">
+            <h2>Serve Smart</h2>
+        </div>
+        
+        <div id="nav-items">
+            <a href="#meals">Dashboard</a>
+            <a href="#history">Bookings</a>
+        </div>
+    </div>
+
+    <div id="dashboard">
+        <aside>
+            <div class="profile-container">
+                <h2>Profile</h2><br>
+                <h2>Student</h2>
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Picture">
+                <h2>Ketan Suthar</h2>
+                <p>2203051050292@paruluniversity.ac.in</p>
+            </div>
+        </aside>
+
+        <div class="section meal-container" id="meals">
+            <h2 id="sec1">Book Your Meal Now!</h2>
+            <div class="meal-card">
+                <h2>Lunch</h2>
+                <div class="inner-card">
+                    <p><strong>Time:</strong> 12:30 PM - 2:00 PM</p>
+                    <p><strong>Booking Deadline:</strong> 10:00 AM</p>
+                    <p><strong>Menu:</strong> Matar Paneer</p>
+                </div>
+                <a href="#" class="btn" onclick="bookMeal('lunch')">
+                    <i class="fas fa-utensils"></i> Book Meal
+                </a>
+            </div>
+
+            <div class="meal-card">
+                <h2>Dinner</h2>
+                <div class="inner-card">
+                    <p><strong>Time:</strong> 7:30 PM - 9:00 PM</p>
+                    <p><strong>Booking Deadline:</strong> 5:00 PM</p>
+                    <p><strong>Menu:</strong> Matar Paneer</p>
+                </div>
+                <a href="#" class="btn" onclick="bookMeal('dinner')">
+                    <i class="fas fa-utensils"></i> Book Meal
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section booking-history" id="history">
+        <h2>Booking History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Date</th>
+                    <th>Meal Type 1 (Lunch)</th>
+                    <th>Meal Type 2 (Dinner)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tbody id="booking-table">
+                    
+                </tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>

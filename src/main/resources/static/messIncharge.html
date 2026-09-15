@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Incharge Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="messIncharge.css">
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.MJ6Bm3Vbv6GjHPY5k8XeDQHaF7&pid=Api&P=0&h=180" alt="Serve Smart Logo">
+            <h2>Serve Smart</h2>
+        </div>
+        <div id="nav-items">
+            <a href="#board">Dashboard</a>
+            <a href="#meal-post">Meal Post</a>
+            <a href="#total-bookings">Total Bookings</a>
+            <a href="#qr-verification">QR Verification</a>
+        </div>
+    </div>
+
+    <div id="dashboard">
+        <aside>
+            <div class="profile-container">
+                <h2>Profile</h2>
+                <h2>Mess Incharge</h2>
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Picture">
+                <h2>Ketan Suthar</h2>
+                <p>2203051050292@paruluniversity.ac.in</p>
+            </div>
+        </aside>
+    
+        <div id="main-content">
+            <div class="analytics" id="board">
+                <br>
+                <h2>Analytics Board</h2>
+                <div class="chart-container">
+                    <canvas id="mealLineChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Meal Post Section -->
+            <div class="section meal-container" id="meal-post">
+                <h2>Meal Post (Menu)</h2>
+                <textarea id="menu-input" placeholder="Enter today's meal..."></textarea>
+                <label for="meal-type">Meal Type:</label>
+                <select id="meal-type">
+                    <option value="">Select</option>
+                    <option value="LUNCH">Lunch</option>
+                    <option value="DINNER">Dinner</option>
+                </select>
+
+                <button onclick="postMeal()">Post Menu</button>
+                <div id="menu-display"></div>
+            </div>
+    
+            <!-- Total Bookings -->
+            <div class="section booking-container" id="total-bookings">
+                <h2>Total Bookings</h2>
+                <p id="booking-count">Total Meals Booked: 0</p>
+            </div>
+    
+            <!-- QR Verification -->
+            <div class="section qr-container" id="qr-verification">
+                <h2>QR Verification</h2>
+                <div id="qr-reader"></div>
+                <p id="qr-result"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="messIncharge.js"></script>
+</body>
+</html>
